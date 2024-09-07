@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poker Game</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="app.js"></script>
+    <style>
+        #room-info {
+            background-color: #f0f0f0;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+        }
+
+        #room-info h2 {
+            margin: 0;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div id="auth-view" style="display: none;">
+        <!-- Authentication view content -->
+    </div>
+
+    <div id="lobby-view" style="display: none;">
+        <h1>Poker Lobby</h1>
+        <div id="room-list"></div>
+    </div>
+
+    <div id="game-view" style="display: none;">
+        <div id="room-info"></div>
+        <div id="game-table"></div>
+        <div id="player-info"></div>
+        <div id="game-actions"></div>
+    </div>
+</body>
+</html>
